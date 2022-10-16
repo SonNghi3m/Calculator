@@ -83,9 +83,10 @@ public class App
                     System.out.println("Thank you for using our app!");
                     break;
                 }
+
             } catch (Exception e) {
                 System.out.println("Your input is not correct! Please rerun the program!");
-
+                break;
             }
         }
     }
