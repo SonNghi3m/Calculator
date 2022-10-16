@@ -39,6 +39,7 @@ public class App
                         } else {
                             System.out.println("You must enter correct character: 'y' or 'n' !");
                             userChoice = true;
+
                         }
                     }
 
@@ -86,7 +87,7 @@ public class App
 
             } catch (Exception e) {
                 System.out.println("Your input is not correct! Please rerun the program!");
-                break;
+                scanner.next();
             }
         }
     }
