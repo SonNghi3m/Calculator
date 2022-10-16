@@ -21,13 +21,43 @@ public class App
                 double num1 = scanner.nextDouble();
                 System.out.println("Enter second number: ");
                 double num2 = scanner.nextDouble();
-                System.out.println("The result is: " + (num1 + num2));
+
+                double addSum = 0;
+                boolean userChoice = true;
+                while (userChoice) {
+                    System.out.println("Do you want to add more number? (y/n) ");
+                    char addSelect = scanner.next().charAt(0);
+                    if (addSelect == 'y') {
+                        System.out.println("Enter numbers you want to add: ");
+                        double addNumber = scanner.nextDouble();
+                        addSum = addSum + addNumber;
+                    } else if (addSelect == 'n'){
+                        userChoice = false;
+                    }
+
+                    System.out.println("The result is: " + (num1 + num2 + addSum));
+                }
+
             } else if (option == 2) {
                 System.out.println("Enter first number: ");
                 double num1 = scanner.nextDouble();
                 System.out.println("Enter second number: ");
                 double num2 = scanner.nextDouble();
-                System.out.println("The result is: " + (num1 - num2));
+
+                double subSum = 0;
+                boolean userChoice = true;
+                while (userChoice) {
+                    System.out.println("Do you want to add more number? (y/n) ");
+                    char addSelect = scanner.next().charAt(0);
+                    if (addSelect == 'y') {
+                        System.out.println("Enter numbers you want to add: ");
+                        double addNumber = scanner.nextDouble();
+                        subSum = subSum + addNumber;
+                    } else if (addSelect == 'n'){
+                        userChoice = false;
+                    }
+                    System.out.println("The result is: " + (num1 - num2 - subSum));
+}
             } else if (option == 3) {
                 System.out.println("Enter first number: ");
                 double num1 = scanner.nextDouble();
